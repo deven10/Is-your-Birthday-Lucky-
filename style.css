@@ -1,0 +1,84 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #EDEADE;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: sans-serif;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 30px;
+    height: 60vh;
+    width: 60vw;
+}
+
+.content h1{
+    padding: 20px 40px;
+    font-size: 40px;
+    padding: 10px 20px;
+}
+
+.label{
+    outline: none;
+    padding: 20px 40px;
+    font-size: 24px;
+    padding: 10px 20px;
+    text-decoration: underline;
+    color: black;
+}
+
+.input{
+    padding: 20px 40px;
+    cursor: pointer;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 24px;
+    padding: 10px 20px;
+    margin-bottom: 15px;
+    color: black;
+
+}
+
+.btn{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 22px;
+    margin-top: 10px;
+    background-color: transparent;
+    opacity: 0.8;
+    color:black;
+    margin-bottom: 15px;    
+}
+.btn:hover{
+    opacity: 1;
+    transition: 0.1s all ease-in;
+}
+
+.btn:active{
+    transform: scale(0.9);
+}
+
+.output{
+    text-decoration: none;
+    margin-top: 20px;
+    font-size: 30px;
+    color: black;
+    padding: 10px 20px;
+}
