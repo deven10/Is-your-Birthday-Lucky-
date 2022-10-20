@@ -4,8 +4,10 @@ const checkNumber = document.getElementById("check-number");
 const checkBirthdayLuck = document.getElementById("checkBirtdayLuck");
 
 function compareValues(sum, luckyNumber){
-    if(sum % luckyNumber === 0){
-        console.log("Your Birthday is Lucky 🚀");
+    if(luckyNumber < 0 || luckyNumber == 0){
+        checkBirthdayLuck.innerText = `Lucky Number should be Positive ¯\\_(ツ)_/¯ `;
+    }
+    else if(sum % luckyNumber === 0){
         checkBirthdayLuck.innerText = "Your Birthday is Lucky 🚀";
     } else {
         console.log("Your Birthday is not Lucky 😖");
